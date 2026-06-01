@@ -23,3 +23,28 @@
 ```bash
 git clone [https://github.com/Khaled-Aly-Elnagar/DecodeLabs-Internship-p2.git](https://github.com/Khaled-Aly-Elnagar/DecodeLabs-Internship-p2.git)
 cd DecodeLabs-Internship-p2
+
+تثبيت المكتبات المطلوبة (Install Dependencies):
+
+Bash
+pip install customtkinter
+تشغيل المحرك (Run the Application):
+
+Bash
+python crypto_engine.py
+🧮 Mathematical Logic
+يعتمد المحرك على التطبيق الرياضي الصارم لمعامل باقي القسمة (Modulo 26) لضمان بقاء الحروف داخل النطاق الأبجدي دون إنتاج رموز مشوهة في جدول ASCII:
+
+$$ \text{Cipher Character} = \text{chr}((\text{ord}(\text{char}) - \text{Base} + \text{shift}) \pmod{26} + \text{Base}) $$
+
+يتم فحص الحرف ديناميكياً وتحديد نقطة الأساس (Base)؛ بقيمة 65 للحروف الكبيرة (A-Z) وقيمة 97 للحروف الصغيرة (a-z).
+
+🛡️ Robustness Demo (Edge Cases Handled)
+Input: 123ewdc vvc!
+
+Shift Key: 3
+
+Output: 123hzgf yyf!
+(يلاحظ صمود الأرقام، المسافات، وعلامة التعجب وتجاوزها لعملية التعديل الرياضي بنجاح، بينما تم تشفير الحروف فقط بدقة).
+
+Author: Khaled Aly Aly Elnagar
