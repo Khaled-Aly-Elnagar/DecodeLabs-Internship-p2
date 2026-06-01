@@ -20,6 +20,6 @@
 لضمان تشغيل المحرك دون تضارب في البيئات البرمجية، اتبع الخطوات التالية:
 
 1. **استنساخ المستودع (Clone the Repository):**
-   ```bash
-   git clone [https://github.com/Khaled-Aly-Elnagar/DecodeLabs-Internship-p2.git](https://github.com/Khaled-Aly-Elnagar/DecodeLabs-Internship-p2.git)
-   cd DecodeLabs-Internship-p2
+```bash
+git clone [https://github.com/Khaled-Aly-Elnagar/DecodeLabs-Internship-p2.git](https://github.com/Khaled-Aly-Elnagar/DecodeLabs-Internship-p2.git)
+cd DecodeLabs-Internship-p2
